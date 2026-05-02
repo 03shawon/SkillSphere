@@ -1,11 +1,11 @@
 import Hero from "./components/Hero";
+import PopularCourses from "./components/PopularCourses";
 
 export default function Home() {
   return (
-    <div>
-
-      <h2 className="font-bold text-3xl items-center text-center p-20">Home page</h2>
+    <main>
       <Hero></Hero>
-    </div>
+      <PopularCourses></PopularCourses>
+    </main>
   );
 }
