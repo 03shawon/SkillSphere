@@ -1,0 +1,47 @@
+"use client";
+import Link from "next/link";
+
+const Footer = () => {
+    return (
+        <footer className="border-t py-10 bg-background text-foreground">
+            <div className="max-w-7xl mx-auto px-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+
+                    <div>
+                        <h4 className="font-bold mb-3">Contact Info</h4>
+                        <p className="text-sm text-muted-foreground">Email: support@skillsphere.com</p>
+                        <p className="text-sm text-muted-foreground">Phone: +880 1234 567890</p>
+                        <p className="text-sm text-muted-foreground">Address: Dhaka, Bangladesh</p>
+                    </div>
+
+
+                    <div>
+                        <h4 className="font-bold mb-3">Social Links</h4>
+                        <div className="flex flex-col gap-2 text-sm text-muted-foreground">
+                            <Link href="/" className="hover:text-primary">Facebook</Link>
+                            <Link href="/" className="hover:text-primary">LinkedIn</Link>
+                            <Link href="/" className="hover:text-primary">Twitter</Link>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <h4 className="font-bold mb-3">Legal</h4>
+                        <div className="flex flex-col gap-2 text-sm text-muted-foreground">
+                            <Link href="/terms" className="hover:text-primary">Terms & Conditions</Link>
+                            <Link href="/privacy" className="hover:text-primary">Privacy Policy</Link>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="border-t mt-8 pt-6 text-center text-xs text-muted-foreground">
+                    <p>© {new Date().getFullYear()} SkillSphere. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;
