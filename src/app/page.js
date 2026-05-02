@@ -1,7 +1,11 @@
-import Image from "next/image";
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <h2 className="font-bold text-3xl items-center text-center p-20">Home page</h2>
+    <div>
+
+      <h2 className="font-bold text-3xl items-center text-center p-20">Home page</h2>
+      <Hero></Hero>
+    </div>
   );
 }

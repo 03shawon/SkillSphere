@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { FaFacebookF, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -19,9 +20,9 @@ const Footer = () => {
                     <div>
                         <h4 className="font-bold mb-3">Social Links</h4>
                         <div className="flex flex-col gap-2 text-sm text-muted-foreground">
-                            <Link href="/" className="hover:text-primary">Facebook</Link>
-                            <Link href="/" className="hover:text-primary">LinkedIn</Link>
-                            <Link href="/" className="hover:text-primary">Twitter</Link>
+                            <Link href="/" className=" flex hover:text-primary gap-1 items-center"><FaFacebookF />Facebook</Link>
+                            <Link href="/" className="hover:text-primary flex gap-1 items-center"><FaLinkedin />LinkedIn</Link>
+                            <Link href="/" className="hover:text-primary flex gap-1 items-center"><FaTwitter />Twitter</Link>
                         </div>
                     </div>
 
