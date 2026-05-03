@@ -13,6 +13,7 @@ import {
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
+import { CgGoogle } from "react-icons/cg";
 
 export default function SignUpPage() {
     const router = useRouter()
@@ -41,6 +42,19 @@ export default function SignUpPage() {
             router.push('/')
         }
 
+    };
+
+    const handleGoogle = async () => {
+        const { error } = await authClient.signIn.social({
+            provider: "google",
+        });
+
+        if (error) {
+            toast.error(error.message || "Google Login Failed ");
+            return;
+        }
+
+        toast.success("Google Login Successful ");
     };
 
     return (
@@ -114,6 +128,10 @@ export default function SignUpPage() {
                     </Button>
                 </div>
             </Form>
+            <div>
+                <p className="font-bold text-center ">Or</p>
+                <Button onClick={handleGoogle} variant="outline" className={'w-full'}><CgGoogle></CgGoogle> Sign With Google</Button>
+            </div>
         </Card>
     );
 }
