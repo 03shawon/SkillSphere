@@ -1,4 +1,4 @@
-import TopCoursesCard from "../components/TopCoursesCard"
+import TopCoursesCard from "../../components/TopCoursesCard"
 
 const AllCoursesPage = async () => {
     const res = await fetch('https://skillsphere-psi-two.vercel.app/courses.json')
