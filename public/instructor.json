@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Sarah Johnson",
+    "role": "Senior Web Architect",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150",
+    "total_students": "45k+",
+    "courses": 10
+  },
+  {
+    "id": 2,
+    "name": "Alex Rivera",
+    "role": "UI/UX Design Lead",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150",
+    "total_students": "32k+",
+    "courses": 6
+  },
+  {
+    "id": 3,
+    "name": "Mark Spencer",
+    "role": "Full Stack Developer",
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150",
+    "total_students": "58k+",
+    "courses": 14
+  },
+  {
+    "id": 4,
+    "name": "Emily Chen",
+    "role": "Next.js Specialist",
+    "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150",
+    "total_students": "27k+",
+    "courses": 5
+  }
+]
