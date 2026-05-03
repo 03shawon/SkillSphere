@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Hero = () => {
     return (
-        <div className="relative w-full bg-background overflow-hidden py-20 md:py-32">
+        <div className="relative w-full bg-background overflow-hidden py-20 md:py-32 container mx-auto">
             <div className="max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
 
                 <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-primary/10 border border-primary/20">
