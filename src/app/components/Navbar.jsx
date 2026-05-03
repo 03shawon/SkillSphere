@@ -8,7 +8,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className="border-b px-4 sticky top-0 z-50 bg-background/80 backdrop-blur-md container mx-auto">
+        <div className="border-b px-4 sticky top-0 z-50 bg-gray-200 backdrop-blur-md container mx-auto">
             <nav className="flex justify-between items-center py-3 max-w-7xl mx-auto w-full">
 
                 <div className="flex items-center gap-3">

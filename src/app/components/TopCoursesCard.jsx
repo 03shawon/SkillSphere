@@ -7,7 +7,7 @@ const TopCoursesCard = ({ course }) => {
   if (!course) return null;
 
   return (
-    <Card className="border border-default-200 rounded-2xl p-3 shadow-sm hover:shadow-md transition-all duration-300 container mx-auto">
+    <Card className="border border-default-200 rounded-2xl p-3 bg-gray-100 shadow-sm hover:shadow-md transition-all duration-300 container mx-auto">
       <div className="relative w-full aspect-video overflow-hidden rounded-xl">
         <Image
           src={course.image}
@@ -39,7 +39,7 @@ const TopCoursesCard = ({ course }) => {
       </div>
 
       <div className="mt-auto">
-        <Link href={`/courses/${course.id}`} className="block w-full">
+        <Link href={`/all-courses/${course.id}`} className="block w-full">
           <Button
             variant="solid"
             color="primary"
