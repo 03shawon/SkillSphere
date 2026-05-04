@@ -45,10 +45,10 @@ const SignInPage = () => {
     };
 
     return (
-        <Card className="border mx-auto w-125 py-10 mt-5 mb-5 bg-gray-100">
-            <h1 className="text-center text-2xl font-bold">Sign In</h1>
+        <Card className="border mx-auto w-full max-w-md py-8 px-4 sm:px-6 mt-5 mb-5 bg-gray-100">
+            <h1 className="text-center text-2xl font-bold mb-6">Sign In</h1>
 
-            <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
+            <Form className="flex flex-col gap-4 w-full" onSubmit={onSubmit}>
                 <TextField isRequired name="email" type="email">
                     <Label>Email</Label>
                     <Input placeholder="john@example.com" />
