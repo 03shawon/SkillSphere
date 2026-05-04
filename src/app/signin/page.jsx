@@ -4,8 +4,11 @@ import { authClient } from "@/lib/auth-client";
 import { Check } from "@gravity-ui/icons";
 import { Button, Card, Description, FieldError, Form, Input, Label, TextField } from "@heroui/react";
 import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 import toast from "react-hot-toast";
 import { CgGoogle } from "react-icons/cg";
+
+
 
 const SignInPage = () => {
     const searchParams = useSearchParams();
@@ -80,4 +83,12 @@ const SignInPage = () => {
     );
 }
 
-export default SignInPage;
+const SignInWrap = () => {
+    return (
+        <Suspense fallback={<div>loading...</div>}>
+            <SignInPage ></SignInPage>
+        </Suspense>
+    )
+}
+
+export default SignInWrap;
