@@ -39,7 +39,7 @@ export default function SignUpPage() {
         }
         else {
             toast.success("Signup Successful");
-            router.push('/')
+            router.push('/signin')
         }
 
     };

@@ -1,3 +1,4 @@
+import TrendingCourse from "@/components/TrendingCourse";
 import Hero from "../components/Hero";
 import LearningTips from "../components/LearningTips";
 import PopularCourses from "../components/PopularCourses";
@@ -10,6 +11,7 @@ export default function Home() {
       <PopularCourses></PopularCourses>
       <LearningTips></LearningTips>
       <TopInstructor></TopInstructor>
+      <TrendingCourse></TrendingCourse>
     </main>
   );
 }

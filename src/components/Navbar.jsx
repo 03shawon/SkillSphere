@@ -52,8 +52,8 @@ const Navbar = () => {
                 )}
                 <div className="flex items-center gap-4">
                     {!user && (<ul className="flex items-center text-sm gap-3 ">
-                        <li><Link href="/signin" className="border rounded-2xl p-3 bg-blue-200">SignIn</Link></li>
-                        <li><Link href="/signup" className="border rounded-2xl p-3 bg-blue-200">SignUp</Link></li>
+                        <li><Link href="/signin" className="border rounded-2xl p-3 bg-blue-200">LogIn</Link></li>
+                        <li><Link href="/signup" className="border rounded-2xl p-3 bg-blue-200">Register</Link></li>
                     </ul>)}
                     {user && (
                         <div className="flex gap-3">
